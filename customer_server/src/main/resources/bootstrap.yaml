@@ -1,0 +1,14 @@
+# 1. 服务名称  2. 环境运行名称 dev/pro/test 3. nacos 服务地址
+spring:
+  application:
+    name: eshop-customer-server
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+
+
+ # 配置文件 到nacos （localhost:8848）中找：   eshop-customer-server-dev.yaml

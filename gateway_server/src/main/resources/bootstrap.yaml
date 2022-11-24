@@ -1,0 +1,16 @@
+#(1) 服务名
+#(2) 运行环境 dev/pro/test
+#（3）配置文件后缀名
+#(4) nacos URL
+
+spring:
+  application:
+    name: eshop-gateway-server
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        file-extension: yaml

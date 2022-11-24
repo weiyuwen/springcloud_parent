@@ -1,0 +1,17 @@
+server:
+  port: 7777
+
+spring:
+  application:
+    name: nacos_config
+  cloud:
+    nacos:
+       server-addr: localhost:8848
+       config:
+         server-addr: localhost:8848
+         file-extension: yaml
+
+# 服务名-环境名称.文件后缀名
+# nacos_config-dev.yaml
+
+
